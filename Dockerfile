@@ -1,7 +1,8 @@
 FROM hlohaus789/g4f:latest
 
-# Optional: expose port for Railway (default API is 8080)
+# Expose ports used by the app
 EXPOSE 8080
+EXPOSE 7900
 
-# Default command to start the API
-CMD ["python3", "api/main.py"]
+# No CMD or ENTRYPOINT override needed
+# The container runs correctly on its own
